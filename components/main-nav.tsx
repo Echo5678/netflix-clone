@@ -75,7 +75,7 @@ export function MainNav({
                 key={route.label}
                 onClick={() => page.setPage(route.label)}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-gray-300  text-gray-100",
+                  "text-lg font-medium transition-colors hover:text-gray-300  text-gray-100  px-5 py-1 rounded-md",
                   route.active
                     ? "text-white font-black tracking-wide  hover:text-red-500 pointer-events-none"
                     : "text-muted-foreground"

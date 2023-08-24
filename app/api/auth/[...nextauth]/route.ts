@@ -10,7 +10,7 @@ import { db } from "@/lib/mongodb";
 import { compare } from "bcryptjs";
 import User from "@/models/User";
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   adapter: MongoDBAdapter(clientPromise),
   providers: [
     GoogleProvider({
